@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spl_logo_height">350dp</dimen>
+    <dimen name="spl_logo_width">350dp</dimen>
+    <dimen name="spl_margin_bottom">50dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="text_header">25sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_regular">18sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen name="font_Small">14sp</dimen>
+    <dimen name="font_Normal">16sp</dimen>
+    <dimen name="font_Medium">18sp</dimen>
+    <dimen name="font_Large">22sp</dimen>
+
+    <dimen name="font_vibe_positive">20sp</dimen>
+    <dimen name="vibe_top_mar">20dp</dimen>
+
+    <dimen name="font_Adapter">24sp</dimen>
+    <dimen name="font_class_Adapter">22sp</dimen>
+    <!--    login register forget-->
+    <dimen name="allscreen_top_pad">20dp</dimen>
+    <dimen name="logo_height">200dp</dimen>
+    <dimen name="btn_height">55dp</dimen>
+    <dimen name="btn_height_restore">45dp</dimen>
+    <dimen name="btn_width">120dp</dimen>
+    <dimen name="btn_width_log_reg">180dp</dimen>
+    <dimen name="btn_p_l">10dp</dimen>
+    <dimen name="btn_p_r">10dp</dimen>
+    <dimen name="btn_p_t">1dp</dimen>
+    <dimen name="btn_p_b">1dp</dimen>
+
+    <dimen name="imgBack_cou_clas_H">45dp</dimen>
+    <dimen name="imgBack_cou_clas_pad">5dp</dimen>
+    <dimen name="imgBack_h">40dp</dimen>
+    <dimen name="imgBack_w">30dp</dimen>
+    <dimen name="imgBack_pad">5dp</dimen>
+    <dimen name="imgBack_marLeft">10dp</dimen>
+
+    <dimen name="edtHeight">60dp</dimen>
+
+    <!--    Main Activity-->
+    <dimen name="unlock_height">30dp</dimen>
+    <dimen name="menu_img_height">40dp</dimen>
+    <dimen name="menu_img_width">40dp</dimen>
+    <dimen name="menu_bar_height">50dp</dimen>
+
+    <dimen name="setting_height">60dp</dimen>
+    <dimen name="settingArro">20dp</dimen>
+
+    <dimen name="class_item_height">160dp</dimen>
+    <dimen name="class_image_height">250dp</dimen>
+    <dimen name="afterview_tru_img">90dp</dimen>
+    <dimen name="afterv_img_pad">30dp</dimen>
+
+    <dimen name="desc_pad">15dp</dimen>
+<dimen name="inAppPad">5dp</dimen>
+
+    <dimen name="global_padding_x_small">4dp</dimen>
+    <dimen name="global_padding_small">6dp</dimen>
+    <dimen name="global_padding">8dp</dimen>
+    <dimen name="global_padding_middle">12dp</dimen>
+    <dimen name="global_padding_extra">18dp</dimen>
+    <dimen name="global_padding_x_extra">24dp</dimen>
+    <dimen name="global_padding_2x_extra">30dp</dimen>
+    <dimen name="global_padding_3x_extra">34dp</dimen>
+    <dimen name="global_padding_4x_extra">48dp</dimen>
+
+    <dimen name="global_margin_x_small">4dp</dimen>
+    <dimen name="global_margin">8dp</dimen>
+    <dimen name="global_margin_middle">12dp</dimen>
+    <dimen name="global_margin_extra">18dp</dimen>
+    <dimen name="global_margin_x_extra">24dp</dimen>
+
+    <dimen name="player_base_height">220dp</dimen>
+
+    <dimen name="player_controller_base_height">40dp</dimen>
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="header_frag">50dp</dimen>
+    <dimen name="profile_header">50dp</dimen>
+
+    <dimen name="default_left_right_mar">10dp</dimen>
+</resources>

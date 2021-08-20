@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".settingpage.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/imgBack_h"
+            android:layout_height="@dimen/imgBack_w"
+
+            android:padding="@dimen/imgBack_pad"
+            android:src="@drawable/backarrow"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLogout"
+        android:layout_width="match_parent"
+       android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+
+        <TextView
+            android:id="@+id/TvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textStyle="bold"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Normal" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/nextarrow" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relLogout"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/relHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relreminders"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                  android:layout_margin="5dp"
+                    android:src="@drawable/right_aro"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Reminders"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relPosVibe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right_aro"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Positive vibe notifications"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:src="@drawable/right_aro"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Send us feedback"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relTerm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right_aro"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Term &amp; Conditions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right_aro"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relSubs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_height"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edt_round_grey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/settingArro"
+                    android:layout_height="@dimen/settingArro"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right_aro"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Subscription"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

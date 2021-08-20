@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".classcourse.ClassesDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgClasses"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/class_image_height"
+                android:scaleType="fitXY" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgTrans"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/class_image_height"
+                android:src="@color/lightblack" />
+
+
+            <TextView
+                android:id="@+id/tvCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCourse"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_Normal" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgClasses"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/desc_pad"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_Normal" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relclass"
+        android:layout_width="@dimen/btn_width_log_reg"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_round">
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Start Class"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Normal" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+
+            android:padding="5dp"
+            android:src="@drawable/nextarrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/imgBack_cou_clas_H"
+        android:layout_height="@dimen/imgBack_cou_clas_H"
+        android:padding="@dimen/imgBack_cou_clas_pad"
+        android:src="@drawable/round_back"
+        />
+</RelativeLayout>

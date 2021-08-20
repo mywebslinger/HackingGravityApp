@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InAppActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/termandp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/inappimg" />
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_main"
+                    android:layout_marginLeft="@dimen/default_left_right_mar"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/default_left_right_mar">
+
+                    <TextView
+                        android:id="@+id/txtu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_Medium" />
+
+                    <TextView
+                        android:id="@+id/txt_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/txtu_name"
+                        android:text=" , Let's do this!"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_Medium" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel1"
+                    android:layout_marginLeft="@dimen/default_left_right_mar"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/default_left_right_mar"
+                    android:text="@string/title1"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/font_Normal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_paylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_detail1"
+                    android:layout_marginLeft="@dimen/default_left_right_mar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/default_left_right_mar" />
+
+                <TextView
+                    android:id="@+id/txt_detail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rec_paylist"
+                    android:layout_marginLeft="@dimen/default_left_right_mar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/default_left_right_mar"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/title2"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/font_Normal" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/termandp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvRestore"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Services"
+
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  and  " />
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Small"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRestore"
+        android:layout_width="@dimen/btn_width_log_reg"
+        android:layout_height="@dimen/btn_height_restore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_round"
+        android:gravity="center"
+       android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Restore"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_Normal" />
+
+    <ImageView
+        android:id="@+id/imgclose"
+        android:layout_width="@dimen/imgBack_h"
+        android:layout_height="@dimen/imgBack_h"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/roundshap_black"
+        android:padding="10dp"
+        android:src="@drawable/close"
+        app:tint="@color/white" />
+</RelativeLayout>

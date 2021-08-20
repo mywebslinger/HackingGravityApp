@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/imgBack_h"
+        android:layout_height="@dimen/imgBack_w"
+
+        android:padding="@dimen/imgBack_pad"
+
+        android:src="@drawable/backarrow"
+        app:tint="@color/black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relSign"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgYoga"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_height"
+            android:layout_below="@+id/imgClose"
+            android:src="@drawable/yoga2" />
+        <!--
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/names"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundColor="@color/black">-->
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_round_grey"
+            android:hint="@string/names"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!-- <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/inputEmail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:hint="@string/email"
+             android:textColorHint="@color/black"
+             app:boxBackgroundColor="@color/black">-->
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_round_grey"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <!-- <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/inputPass"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp"
+             android:hint="@string/password"
+             android:textColorHint="@color/black"
+             app:boxBackgroundColor="@color/black">-->
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_round_grey"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <CheckBox
+            android:id="@+id/chkSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Send me a welcome email &amp; more"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relSign"
+        android:layout_width="@dimen/btn_width_log_reg"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linorview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvSign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:paddingLeft="@dimen/btn_p_l"
+            android:paddingTop="@dimen/btn_p_t"
+            android:paddingRight="@dimen/btn_p_r"
+            android:paddingBottom="@dimen/btn_p_b"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Normal" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/nextarrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linorview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linFbLogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:background="@color/darkGrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   OR   "
+            android:textSize="@dimen/font_Medium"
+            android:textColor="@color/darkGrey" />
+
+        <View
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:background="@color/darkGrey" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linFbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:padding="5dp"
+            android:src="@drawable/nextarrow" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

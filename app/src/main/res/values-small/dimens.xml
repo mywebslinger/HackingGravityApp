@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spl_logo_height">350dp</dimen>
+    <dimen name="spl_logo_width">350dp</dimen>
+    <dimen name="spl_margin_bottom">50dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="text_header">25sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_regular">18sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+</resources>

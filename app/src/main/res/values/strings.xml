@@ -1,0 +1,49 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Hacking Gravity</string>
+    <string name="spl_jointribe">JOIN THE RESISTANCE</string>
+    <string name="spl_login">LOGIN</string>
+    <string name="login">Login</string>
+    <string name="spl_have_account">Already have an account?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotPass">Forgot Password</string>
+    <string name="names">Name</string>
+    <string name="practice">Practice</string>
+    <string name="positiveVibes">Positive Vibes</string>
+    <string name="Profile">Profile</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedbackmail">hackinggravity@gmail.com</string>
+
+    <string name="email_app_not_installed">email app not installed</string>
+    <string name="feedback_sub">Hacking Gravity YOGA</string>
+
+    <string name="title1"> Get access to the entire Hacking Gravity Yoga library of full-lenght series, classes and monthly challenges.</string>
+    <string name="title2">Get access to the entire Hacking Gravity Yoga library of full-lenght series, classes and monthly challenges. Get access to the entire Hacking Gravity Yoga library of full-lenght series, classes and monthly challenges.</string>
+
+    <string name="facebook_app_id">255526088855213</string>
+    <string name="fb_login_protocol_scheme">fb255526088855213</string>
+
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_drm_unsupported_before_api_18">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="unsupported_ads_in_concatenation">Playing sample without ads, as ads are not supported in concatenations</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="error_generic">Playback failed</string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="title_retry">Try Again!</string>
+</resources>

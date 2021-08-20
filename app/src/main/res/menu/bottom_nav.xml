@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_select"
+        android:enabled="true"
+
+        android:title="@string/practice" />
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/message_select"
+        android:enabled="true"
+        android:title="@string/positiveVibes" />
+    <item
+        android:id="@+id/form"
+        android:icon="@drawable/profile_select"
+        android:enabled="true"
+        android:title="@string/Profile" />
+</menu>

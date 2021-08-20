@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.PracticeFragment">
+
+    <RelativeLayout
+        android:id="@+id/toprel"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_round_profile"
+        android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/imgBack_cou_clas_pad"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linDeatil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserName"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days Streak"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/font_Normal" />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="00 Days"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_Normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/font_Normal" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="00 MIN"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_Normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Sessions"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/font_Normal" />
+
+            <TextView
+                android:id="@+id/tvSession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="00 Sessions"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_Normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vline"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="YOUR JOURNEY"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recjourney"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="User"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_Medium"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/vline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/linDeatil"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/darkGrey" />
+
+    <com.matt.hacking_gravity.common.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/user_avatar" />
+
+
+</RelativeLayout>

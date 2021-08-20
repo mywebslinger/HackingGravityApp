@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PickerUI">
+        <!-- to use in PickerUI in the panel -->
+        <attr name="backgroundColor"    format="color"/>
+        <attr name="linesCenterColor"   format="color"/>
+
+        <!-- to use in PickerUIListView -->
+        <attr name="autoDismiss"        format="boolean"/>
+        <attr name="itemsClickables"    format="boolean"/>
+        <attr name="entries"            format="reference"/>
+
+        <!-- to use in PickerUI in the PickerUIListView by PickerUIAdapter -->
+        <attr name="textCenterColor"    format="color"/>
+        <attr name="textNoCenterColor"  format="color"/>
+
+        <!-- Blur Attributes -->
+        <attr name="blur"                   format="boolean"/>
+        <attr name="blur_downScaleFactor"   format="float"/>
+        <attr name="blur_FilterColor"       format="color"/>
+        <attr name="blur_radius"            format="integer"/>
+        <attr name="blur_use_renderscript"  format="boolean"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="AndExoPlayerView">
+        <attr name="andexo_resize_mode" />
+        <attr name="andexo_aspect_ratio" />
+        <attr name="andexo_loop" />
+        <attr name="andexo_full_screen" format="boolean" />
+        <attr name="andexo_play_when_ready" format="boolean" />
+        <attr name="andexo_show_controller" format="boolean" />
+    </declare-styleable>
+
+    <attr name="andexo_resize_mode" format="enum">
+        <enum name="Fit" value="1" />
+        <enum name="Fill" value="2" />
+        <enum name="Zoom" value="3" />
+    </attr>
+
+    <attr name="andexo_aspect_ratio" format="enum">
+        <enum name="aspect_1_1" value="1" />
+        <enum name="aspect_16_9" value="2" />
+        <enum name="aspect_4_3" value="3" />
+        <enum name="aspect_match" value="4" />
+        <enum name="aspect_mp3" value="5" />
+    </attr>
+
+    <attr name="andexo_loop" format="enum">
+        <enum name="infinite" value="1" />
+        <enum name="finite" value="2" />
+    </attr>
+
+</resources>

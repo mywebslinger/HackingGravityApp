@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "539152216645",
+    "firebase_url": "https://hacking-gravity-f32af.firebaseio.com",
+    "project_id": "hacking-gravity-f32af",
+    "storage_bucket": "hacking-gravity-f32af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539152216645:android:d8faa1f88e233f1956e92c",
+        "android_client_info": {
+          "package_name": "com.matt.hacking_gravity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539152216645-mohigs9g0kr4drp7bssilldmu7e6mr5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matt.hacking_gravity",
+            "certificate_hash": "efec05bbd820ed61ae2bce14ed6ef6beaee28e95"
+          }
+        },
+        {
+          "client_id": "539152216645-8e507gj3hth1mk2b0k89ddmpmddvj7i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANNX9nmmndBL3f5RI2xe5O32gW0yO8uYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539152216645-8e507gj3hth1mk2b0k89ddmpmddvj7i9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539152216645-enkotakuq1bec8peupfc1i64a5kce6e9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.matt.hacking-gravity"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".classcourse.AftervideoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/toprel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/bg_round_profile">
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="@dimen/afterview_tru_img"
+            android:layout_height="@dimen/afterview_tru_img"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/roundshap"
+            android:padding="@dimen/afterv_img_pad"
+            android:src="@drawable/is_correct" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSetting"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="NEW TO YOGA? START HERE!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Medium" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvText"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="CLASS COMPLETE!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Medium" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvStrike"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/bg_round_white"
+        android:gravity="center"
+        android:text="1 DAY STREAK"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_Medium" />
+
+    <ImageView
+        android:id="@+id/imgQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStrike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_quote" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvContinue"
+        android:layout_below="@+id/imgQuote">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+
+            android:text="It's an amazing how moving and breathing withintention can make such a powerful shift within. Keep showing up and see how you transform. You are doing such a great job!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Medium" />
+</LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="@dimen/btn_width_log_reg"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_round"
+android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_Normal" />
+</RelativeLayout>

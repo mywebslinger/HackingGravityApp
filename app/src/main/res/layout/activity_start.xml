@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvJoinTribe"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/spl_logo_width"
+            android:layout_height="@dimen/spl_logo_height"
+            android:layout_centerInParent="true"
+           android:padding="30dp"
+            android:src="@drawable/splash_logo_n" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spl_margin_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spl_have_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:text="@string/spl_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_Normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvJoinTribe"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:layout_above="@+id/linbottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_round"
+        android:gravity="center"
+       android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/spl_jointribe"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_Normal" />
+</RelativeLayout>

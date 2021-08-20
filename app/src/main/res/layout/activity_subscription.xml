@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+       >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/imgBack_h"
+            android:layout_height="@dimen/imgBack_w"
+
+            android:padding="@dimen/imgBack_pad"
+            android:src="@drawable/backarrow"
+            app:tint="@color/black"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Subscription"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Medium"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relHeader"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvSubstatuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Not Subscribed"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/font_Normal" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineview1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linStatus"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/darkGrey" />
+    <LinearLayout
+        android:id="@+id/linSubsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/lineview1"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subscription"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="-"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/font_Normal" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineview2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linSubsc"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/darkGrey" />
+    <LinearLayout
+        android:id="@+id/linExpiring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineview2"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Expiring"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvExpiring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="-"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/font_Normal" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineview3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linExpiring"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/darkGrey" />
+
+    <LinearLayout
+        android:id="@+id/linWilRen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/lineview3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Will renew"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvWillRe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="-"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/font_Normal" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineview4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linWilRen"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/darkGrey" />
+    <LinearLayout
+        android:id="@+id/linLatest"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineview4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Latest Purchase Date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_Normal" />
+
+        <TextView
+            android:id="@+id/tvLatest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="-"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/font_Normal" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineview5"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linLatest"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/darkGrey" />
+</RelativeLayout>

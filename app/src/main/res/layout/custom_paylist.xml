@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relmain"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/monthbox">
+
+        <TextView
+            android:id="@+id/txt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:text="payment"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+        <TextView
+            android:id="@+id/txt_payvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="payment"
+            android:layout_below="@id/txt_pay"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Small" />
+
+    </RelativeLayout>
+</RelativeLayout>

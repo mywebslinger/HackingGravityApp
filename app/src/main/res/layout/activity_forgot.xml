@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/imgBack_h"
+        android:layout_height="@dimen/imgBack_w"
+
+        android:padding="@dimen/imgBack_pad"
+
+        android:src="@drawable/backarrow"
+        app:tint="@color/black"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/imgBack">
+
+
+        <ImageView
+            android:id="@+id/imgYoga"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/yoga2" />
+
+        <RelativeLayout
+            android:id="@+id/relloginbutton"
+            android:layout_width="@dimen/btn_width_log_reg"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_round"
+                android:gravity="center"
+                android:paddingLeft="@dimen/btn_p_l"
+                android:paddingTop="@dimen/btn_p_t"
+                android:paddingRight="@dimen/btn_p_r"
+                android:paddingBottom="@dimen/btn_p_b"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_Normal" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/nextarrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/imgYoga"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:text="@string/forgotPass"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_Normal" />
+<!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtforgot"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/black">-->
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edtHeight"
+                android:layout_below="@+id/txtforgot"
+                android:background="@drawable/edt_round_grey"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_Normal" />
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.matt.hacking_gravity"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 5
+        versionName "1.1.5"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.+'
+//    implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation 'com.facebook.android:facebook-login:[5,6)'
+    implementation 'com.github.davidpizarro:pickerui:1.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+//    implementation 'com.google.android.exoplayer:exoplayer-core:2.+'
+//    implementation 'com.google.android.exoplayer:exoplayer-dash:2.+'
+//    implementation 'com.google.android.exoplayer:exoplayer-ui:2.+'
+//    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.15'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.4'
+
+    implementation 'com.android.billingclient:billing:3.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+}
